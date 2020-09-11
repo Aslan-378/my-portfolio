@@ -4,4 +4,7 @@ class PagesController < ApplicationController
 
   def contents
   end
+
+  def cv
+  end
 end
