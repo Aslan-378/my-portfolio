@@ -1,23 +1,22 @@
-<nav class="nav">
-    <div class="container-nav">
-        <div class="logo">
-            <a><%= link_to 'FAKHRI ASLAN', root_path, class: "a-primary" %></a>
-        </div>
-        <div class="main_list" id="mainListDiv">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">cv</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </div>
-        <div class="media_button">
-            <button class="main_media_button" id="mediaButton">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-</nav>
+<div class="container-nav">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a><%= link_to 'ASLAN FAKHRI', root_path, class: "my-name" %></a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a><%= link_to 'home', root_path, class: "a-secondary" %></a></li>
+                              <li><a><%= link_to 'projects', pages_contents_url, class: "a-secondary" %></a></li>
+                              <li><a><%= link_to 'cv', pages_cv_url, class: "a-secondary" %></a></li>
+                              <li><a class = "a-secondary" href="https://instagram.com/aslan____f?igshid=n20oawuw82o" target="_blank">Instagram</a></li>
+                              <li><a class = "a-secondary" href="https://www.linkedin.com/in/fakhri-aslan-38329a130/" target="_blank">linkedin</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
