@@ -1,17 +1,23 @@
-<div class="container-contents">
-  <div class="menu">
-    <div class="label">
-      <%= link_to 'FAKHRI ASLAN', root_path, class: "a-primary" %>
+<nav class="nav">
+    <div class="container-nav">
+        <div class="logo">
+            <a><%= link_to 'FAKHRI ASLAN', root_path, class: "a-primary" %></a>
+        </div>
+        <div class="main_list" id="mainListDiv">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">projects</a></li>
+                <li><a href="#">cv</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="media_button">
+            <button class="main_media_button" id="mediaButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </div>
-    <div class="spacer"></div>
-    <div class="item"><span>
-      <%= link_to 'PROJECTS', pages_contents_url, class: "a-primary" %>
-    </span></div>
-    <div class="item"><span>
-      <%= link_to 'CV', pages_cv_url, class: "a-primary" %>
-    </span></div>
-    <div class="item"><span>contact</span></div>
-    <div class="item"><span>instagram</span></div>
-    <div class="item"><span>linkedin</span></div>
-  </div>
-</div>
+</nav>
