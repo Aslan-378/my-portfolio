@@ -4,6 +4,7 @@
   -moz-animation: fadeIn ease 2s;
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
+  animation-fill-mode: backwards;
 }
 
 .fade-in-content {
@@ -12,6 +13,7 @@
   -moz-animation: fadeIn ease 0.75s;
   -o-animation: fadeIn ease 0.75s;
   -ms-animation: fadeIn ease 0.75s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes fadeIn {
