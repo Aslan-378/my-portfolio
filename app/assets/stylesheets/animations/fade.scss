@@ -1,4 +1,4 @@
-body {
+.fade-in-welcome {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
   -moz-animation: fadeIn ease 2s;
@@ -7,7 +7,14 @@ body {
   animation-fill-mode: backwards;
 }
 
-
+.fade-in-content {
+  animation: fadeIn ease 0.75s;
+  -webkit-animation: fadeIn ease 0.75s;
+  -moz-animation: fadeIn ease 0.75s;
+  -o-animation: fadeIn ease 0.75s;
+  -ms-animation: fadeIn ease 0.75s;
+  animation-fill-mode: backwards;
+}
 
 @keyframes fadeIn {
   0% {opacity:0;}
