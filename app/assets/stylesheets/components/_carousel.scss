@@ -1,23 +1,94 @@
 .project-navigation {
   height: 100vh;
-  background-color: #F7E01A;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 
 .box2 {
   height: 100vh;
-  background-color: #53B6EF;
+  background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.box2 img {
+  object-fit: cover;
+}
+
+.box2 p {
+  width: 400px;
+  height: 400px;
 }
 
 .box3 {
   height: 100vh;
-  background-color: #C9ED53;
+  background-color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+
+
+.box3 p {
+  width: 400px;
+  height: 400px;
+}
+
+//
+
+.image-wrapper {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 30vh;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  object-fit: cover;
+}
+
+.image-1 {
+  clip-path: polygon(0 0, 0 32%, 28% 0);
+  transform: translate(-10px, -10px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.image-2 {
+  clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+  transform: translate(-30px, 5px);
+  transition: transform 300ms ease;
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.image-3 {
+  clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+  transform: translate(-15px, -10px);
+  transition: transform 300ms ease;
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
+.image-4 {
+  clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+  transform: translate(-32px, 5px);
+  transition: transform 300ms ease;
+  transform-origin: top;
+  .image-wrapper:hover & {
+    transform: translate(0,0);
+  }
+}
+
 

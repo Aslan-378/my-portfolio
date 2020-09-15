@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+
 require("@rails/activestorage").start()
 require("channels")
 
@@ -26,9 +27,9 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+if (document.getElementById("navigationn")) {
 
-
-function smoothScroll(target, duration){
+  function smoothScroll(target, duration){
   var target = document.querySelector(target);
   var targetPosition = target.getBoundingClientRect().top;
   var startPosition = window.pageYOffset;
@@ -56,7 +57,7 @@ function smoothScroll(target, duration){
 
 var pr1 = document.querySelector('.project1');
 var pr2 = document.querySelector('.project2');
-var pr3 = document.querySelector('.project2');
+var pr3 = document.querySelector('.box2');
 
 pr1.addEventListener('click', function(){
   smoothScroll('.box2', 500);
@@ -67,8 +68,12 @@ pr2.addEventListener('click', function(){
 });
 
 pr3.addEventListener('click', function(){
-  smoothScroll('.box1', 500);
+  smoothScroll('.project3', 500);
 });
+
+}
+
+
 
 
 
