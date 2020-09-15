@@ -4,7 +4,6 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
@@ -28,8 +27,51 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
+
+function smoothScroll(target, duration){
+  var target = document.querySelector(target);
+  var targetPosition = target.getBoundingClientRect().top;
+  var startPosition = window.pageYOffset;
+  var distance = targetPosition - startPosition;
+  var startTime = null;
+
+  function animation(currentTime) {
+    if( startTime === null ) startTime = currentTime;
+    var timeElapsed = currentTime - startTime;
+    var run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d/2;
+    if (t < 1) return c/2*t*t + b;
+    t--;
+    return -c/2 * (t*(t-2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+
+var pr1 = document.querySelector('.project1');
+var pr2 = document.querySelector('.project2');
+var pr3 = document.querySelector('.project2');
+
+pr1.addEventListener('click', function(){
+  smoothScroll('.box2', 500);
 });
+
+pr2.addEventListener('click', function(){
+  smoothScroll('.box3', 500);
+});
+
+pr3.addEventListener('click', function(){
+  smoothScroll('.box1', 500);
+});
+
+
+
+
+
 
