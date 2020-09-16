@@ -1,5 +1,6 @@
 .project-navigation {
   height: 100vh;
+  width:100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -14,6 +15,10 @@
 }
 
 .box2 img {
+  object-fit: cover;
+}
+
+.box3 img {
   object-fit: cover;
 }
 
@@ -37,12 +42,14 @@
 }
 
 //
-
+.image-phone {
+  display: none;
+}
 .image-wrapper {
   width: 600px;
   height: 400px;
   position: relative;
-  margin: 30vh;
+  margin-left: 25vh;
 }
 
 .image-wrapper img {
@@ -90,5 +97,47 @@
     transform: translate(0,0);
   }
 }
+
+#btnScrollToTop {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  width: 50px;
+  height: 50px;
+  display: none;
+  background-color: white;
+  outline: none;
+  z-index: 99;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+}
+
+#btnScrollToTop:hover {
+  background-color: black;
+  color: white;
+
+}
+
+//queries
+
+@media screen and (max-width: 864px) {
+
+.box2 {
+  display: none;
+}
+
+.box3 {
+  display: none;
+}
+}
+
+
 
 

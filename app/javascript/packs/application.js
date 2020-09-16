@@ -57,7 +57,7 @@ if (document.getElementById("navigationn")) {
 
 var pr1 = document.querySelector('.project1');
 var pr2 = document.querySelector('.project2');
-var pr3 = document.querySelector('.box2');
+var button = document.querySelector('#btnScrollToTop');
 
 pr1.addEventListener('click', function(){
   smoothScroll('.box2', 500);
@@ -67,15 +67,22 @@ pr2.addEventListener('click', function(){
   smoothScroll('.box3', 500);
 });
 
-pr3.addEventListener('click', function(){
-  smoothScroll('.project3', 500);
+button.addEventListener('click', function(){
+  smoothScroll('.project-navigation', 500);
 });
 
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
 }
 
-
-
-
+}
 
 
 
