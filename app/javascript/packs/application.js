@@ -27,7 +27,7 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-if (document.getElementById("navigationn")) {
+
 
   function smoothScroll(target, duration){
   var target = document.querySelector(target);
@@ -80,8 +80,6 @@ function scrollFunction() {
   } else {
     button.style.display = "none";
   }
-}
-
 }
 
 
