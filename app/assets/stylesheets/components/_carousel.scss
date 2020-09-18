@@ -21,6 +21,7 @@
 
 //
 .image-phone {
+
 }
 
 
@@ -61,6 +62,8 @@
     padding: 100px;
     margin-top: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .container-main {
@@ -86,18 +89,18 @@
   .box2 {
     padding-top: 50px;
   }
+
+  .box2 p {
+    padding-top: 20px;
+  }
+
+  .box3 p {
+    padding-top: 20px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  .project-navigation {
-    padding: 100px;
-    margin-top: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
@@ -136,6 +139,112 @@
   and (-webkit-min-device-pixel-ratio: 1.5) {
 
  .image-phone {
+    height: auto;
+  }
+
+  .box3 {
+    display: flex;
+    padding: 100px 50px;
+  }
+
+  .box3 p {
+    padding-top: 20px;
+    margin-right: 50px;
+    font-size: 15px;
+  }
+
+  .box2 {
+    display: flex;
+    padding: 100px 50px;
+  }
+
+  .box2 p {
+    padding-top: 20px;
+    margin-right: 50px;
+    font-size: 15px;
+  }
+
+   .project-navigation {
+    padding: 100px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-main {
+    margin: 50px;
+  }
+
+}
+
+
+@media only screen
+  and (min-width: 1366px)
+  and (max-height: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+ .image-phone {
+    height: auto;
+  }
+
+  .box3 {
+    display: flex;
+    padding: 100px 50px;
+  }
+
+  .box3 p {
+    padding-top: 20px;
+    margin-right: 50px;
+    font-size: 18px;
+  }
+
+  .box2 {
+    display: flex;
+    padding: 100px 50px;
+  }
+
+  .box2 p {
+    padding-top: 20px;
+    margin-right: 50px;
+    font-size: 18px;
+  }
+
+   .project-navigation {
+    padding: 200px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-main {
+    margin: 150px;
+  }
+
+}
+
+
+@media only screen
+  and (min-width: 568px)
+  and (max-height: 414px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  .container-main {
+    margin: 50px;
+  }
+
+  .project-navigation {
+    padding: 100px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-phone {
     width: 100%;
     height: auto;
   }
@@ -148,6 +257,49 @@
     padding-top: 50px;
   }
 
+  .box2 p {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .box3 p {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+}
+
+//ipad landscape
+
+@media only screen
+  and (width: 1024px)
+  and (height: 768px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .image-phone {
+    height: auto;
+  }
+
+  .box3 {
+    display: flex;
+    padding: 100px 50px;
+  }
+
+  .box3 p {
+    margin-right: 50px;
+    font-size: 16px;
+  }
+
+  .box2 {
+    display: flex;
+    padding: 100px 50px;
+  }
+
+  .box2 p {
+    margin-right: 50px;
+    font-size: 16px;
+  }
+
    .project-navigation {
     padding: 100px;
     margin-top: 50px;
@@ -156,8 +308,77 @@
     flex-direction: column;
   }
 
+  .container-main {
+    margin: 100px 50px;
+  }
+
 }
 
+@media only screen
+  and (width: 600px)
+  and (height: 450px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .container-main {
+      margin: 40px;
+  }
+
+  .image-phone {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-navigation {
+    padding: 150px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box2 p {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  .box3 p {
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  .box2 {
+    padding-top: 50px;
+  }
+
+  .box3 {
+    padding-top: 50px;
+  }
+
+}
+
+@media only screen
+  and (width: 280px)
+  and (height: 653px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    .box2 p {
+      font-size: 8px;
+    }
+
+    .box3 p {
+      font-size: 8px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+}
 
 .box2 img {
   object-fit: cover;
