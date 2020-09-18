@@ -1,0 +1,7 @@
+# config/meta.yml
+
+meta_product_name: "ASLAN FAKHRI"
+meta_title: "ASLAN FAKHRI"
+meta_description: "FREELANCE UI/UX DESIGNER AND DEVELOPER"
+meta_image: "my-name.png" # should exist in `app/assets/images/`
+twitter_account: "@ASLAN_FAKHRI"   # required for Twitter Cards
