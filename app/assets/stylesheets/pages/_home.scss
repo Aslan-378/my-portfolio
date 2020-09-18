@@ -57,7 +57,8 @@ p {
   display: inline-block;
 }
 
-.my-name::after {
+@media (hover: hover) {
+  .my-name::after {
   content: '';
   display: block;
   width: 0;
@@ -71,12 +72,19 @@ p {
   -moz-transition: width 0.5s;
   -o-transition: width 0.5s;
   transition: width 0.5s;
-}
+  }
 
 .my-name:hover::after {
   width: 100%;
 
+  }
+
+  .a-secondary:hover {
+  color: gray;
+  text-decoration: none;
+  }
 }
+
 
 .image-half img {
     width:100%;
@@ -97,9 +105,5 @@ p {
   text-decoration: none;
 }
 
-.a-secondary:hover {
-  color: gray;
-  text-decoration: none;
-}
 
 

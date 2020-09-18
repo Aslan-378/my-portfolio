@@ -59,8 +59,8 @@
 @media (max-width: 480px) {
 
   .project-navigation {
-    padding: 100px;
-    margin-top: 50px;
+    padding: 100px 100px;
+    margin-top: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -355,6 +355,14 @@
     padding-top: 50px;
   }
 
+  .box2 h2 {
+      font-size: 18px;
+    }
+
+    .box3 h3 {
+      font-size: 16px;
+    }
+
 }
 
 @media only screen
@@ -371,11 +379,11 @@
       font-size: 8px;
     }
 
-    h2 {
+    .box2 h2 {
       font-size: 18px;
     }
 
-    h3 {
+    .box3 h3 {
       font-size: 16px;
     }
 }
