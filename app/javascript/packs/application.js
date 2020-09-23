@@ -59,15 +59,15 @@ var pr2 = document.querySelector('.project2');
 var button = document.querySelector('#btnScrollToTop');
 
 pr1.addEventListener('click', function(){
-  smoothScroll('.box2', 500);
+  smoothScroll('#project1', 500);
 });
 
 pr2.addEventListener('click', function(){
-  smoothScroll('.box3', 500);
+  smoothScroll('#project2', 500);
 });
 
 button.addEventListener('click', function(){
-  smoothScroll('.project-navigation', 500);
+  smoothScroll('#project-navigation', 500);
 });
 
 
