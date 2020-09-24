@@ -31,7 +31,7 @@ function scrollAppear() {
 
   descText.forEach(txt=>{
     var textPosition = txt.getBoundingClientRect().top;
-    var screenPosition = window.innerHeight;
+    var screenPosition = window.innerHeight/1.3;
 
     if(textPosition < screenPosition) {
     txt.classList.add('desc-text-appear');
