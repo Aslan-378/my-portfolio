@@ -26,9 +26,25 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
+function scrollAppear() {
+  var descText = document.querySelectorAll('.desc-text');
+
+  descText.forEach(txt=>{
+    var textPosition = txt.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight;
+
+    if(textPosition < screenPosition) {
+    txt.classList.add('desc-text-appear');
+  }
+
+  });
+}
+
+window.addEventListener('scroll', scrollAppear);
 
 
-  function smoothScroll(target, duration){
+
+function smoothScroll(target, duration){
   var target = document.querySelector(target);
   var targetPosition = target.getBoundingClientRect().top;
   var startPosition = window.pageYOffset;
