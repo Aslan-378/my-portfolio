@@ -1,9 +1,12 @@
 <div class="container-home fade-in">
-  <div class="image-half">
-    <img src="https://res.cloudinary.com/dimly1skf/image/upload/v1600466764/headshot3_e59z9z.jpg" >
-  </div>
+  <%= link_to pages_contents_url do %>
+    <div class="image-half">
+      <img src="https://res.cloudinary.com/dimly1skf/image/upload/v1600466764/headshot3_e59z9z.jpg" >
+    </div>
+  <% end %>
   <div class="text-half fade-in">
     <%= link_to pages_contents_url, class: "a-primary" do  %>
+      <div class="arrow"></div>
       <h1 class="my-name">ASLAN FAKHRI</h1>
     <% end %>
   </div>
