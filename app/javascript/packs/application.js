@@ -26,8 +26,15 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-function scrollAppear() {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function scrollAppear() {
   var descText = document.querySelectorAll('.desc-text');
+  var macBook = document.querySelectorAll('.macbook-animation');
+
+  await sleep(400);
 
   descText.forEach(txt=>{
     var textPosition = txt.getBoundingClientRect().top;
@@ -35,6 +42,18 @@ function scrollAppear() {
 
     if(textPosition < screenPosition) {
     txt.classList.add('desc-text-appear');
+  }
+
+  });
+
+  await sleep(700);
+
+  macBook.forEach(mac=>{
+    var macPosition = mac.getBoundingClientRect().top;
+    var screenPosition = window.innerHeight/1.3;
+
+    if(macPosition < screenPosition) {
+    mac.classList.add('macbook-animation-appear');
   }
 
   });

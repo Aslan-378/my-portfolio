@@ -10,6 +10,18 @@
   transform: translateY(0px);
 }
 
+.macbook-animation {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 1s all ease-in-out;
+
+}
+
+.macbook-animation-appear {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
 .fade-in {
 animation: fadeIn ease 2s;
 -webkit-animation: fadeIn ease 2s;
