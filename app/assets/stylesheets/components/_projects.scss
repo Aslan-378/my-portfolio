@@ -68,10 +68,15 @@
   }
 
 .text-half {
-  padding-left: 20px;
+  padding: 0 20px;
+}
+
+.intro span {
+  font-size: 12px;
 }
 
 }
+
 @media (min-width: 360px) {
   .image-phone {
   object-fit: cover;
@@ -101,7 +106,7 @@ h2 {
 }
 
 .text-half {
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 
@@ -129,6 +134,14 @@ h2 {
   font-size: 30px;
 }
 
+.text-half {
+  padding: 0 30px;
+}
+
+.intro span {
+  font-size: 16px;
+}
+
 
 }
 
@@ -153,7 +166,18 @@ h2 {
   h2 {
     font-size: 30px;
   }
+
+  .text-half {
+  padding: 0 35px;
  }
+
+ .intro span {
+  font-size: 18px;
+}
+
+}
+
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
@@ -184,20 +208,9 @@ p {
   padding: 200px 0;
 }
 
-.vertical-text {
-  -webkit-transform: rotate(-90deg);
-     -moz-transform: rotate(-90deg);
-     -ms-transform: rotate(-90deg);
-     -o-transform: rotate(-90deg);
-     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-     left: -40px;
-     top: 35px;
-     position: absolute;
-     color: #FFF;
-     text-transform: uppercase;
-     font-size: 26px;
-     font-weight: bold;
-}
+.text-half {
+  padding: 0 40px;
+ }
 
 
 }
