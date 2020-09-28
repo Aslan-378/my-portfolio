@@ -15,7 +15,6 @@ h1 {
 h2 {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
-  font-weight: bold;
   font-size: clamp(2rem, 2.2vw, 2.2rem);
 }
 
@@ -32,10 +31,13 @@ h3 {
 }
 
 p {
-  font-weight: medium;
   font-size: clamp(0.7rem, 1.2vw, 1.2rem);
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
+}
+
+a {
+  font-weight: 300;
 }
 
 .intro span {
