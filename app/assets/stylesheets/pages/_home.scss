@@ -19,7 +19,7 @@ h2 {
 }
 
 .contact-text {
-  font-size: clamp(2rem, 5.5vw, 8rem);
+  font-size: clamp(2.3rem, 6vw, 8rem);
   font-weight: 300;
   padding: 0;
   margin: 0;
@@ -47,6 +47,7 @@ a {
   font-weight: 300;
   text-decoration: none;
   color: black;
+  font-size: clamp(0.7rem, 1.2vw, 1.8rem);
 }
 
 a:hover {
