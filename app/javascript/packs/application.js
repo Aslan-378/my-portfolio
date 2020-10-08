@@ -30,6 +30,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
 async function scrollAppear() {
   var descText = document.querySelectorAll('.desc-text');
   var macBook = document.querySelectorAll('.macbook-animation');

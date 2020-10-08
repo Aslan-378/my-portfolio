@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def cv
   end
 
+  def contact
+  end
+
 end
