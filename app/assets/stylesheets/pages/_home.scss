@@ -111,10 +111,6 @@ a:hover {
   text-decoration: none;
 }
 
-.a-secondary:hover {
-  color: gray;
-  text-decoration: none;
-  }
 
 
 //queries
@@ -142,10 +138,14 @@ a:hover {
   }
 
   #btnScrollToTop:hover {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
+  }
 
-}
+  .a-secondary:hover {
+    color: gray;
+    text-decoration: none;
+  }
 
 }
 
