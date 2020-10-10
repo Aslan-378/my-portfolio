@@ -100,6 +100,14 @@ nav ul li a:hover {
             transition-delay: 0.5s;
       }
 
+      .nav-wrapper ul li:nth-child(5) a {
+            transition-delay: 0.6s;
+      }
+
+      .nav-wrapper ul li:nth-child(6) a {
+            transition-delay: 0.7s;
+      }
+
       .nav-wrapper ul li:not(:first-child) {
             margin-left: 0;
       }
