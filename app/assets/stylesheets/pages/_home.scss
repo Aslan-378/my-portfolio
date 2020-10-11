@@ -47,6 +47,10 @@ a {
   font-weight: 300;
   text-decoration: none;
   color: black;
+  font-size: clamp(0.9rem, 1.2vw, 1.8rem);
+}
+
+.email {
   font-size: clamp(0.7rem, 1.2vw, 1.8rem);
 }
 
