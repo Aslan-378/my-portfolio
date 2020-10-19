@@ -55,9 +55,21 @@
   padding: 0 20px;
 }
 
+p {
+  font-weight: 500;
+}
+
+
 }
 
 @media (min-width: 360px) {
+
+
+  p {
+  font-weight: 500;
+}
+
+
   .image-phone {
   object-fit: cover;
   margin: 0;
@@ -88,8 +100,9 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
-
-
+  p {
+  font-weight: 500;
+}
 
 
   .image-phone {
@@ -131,7 +144,9 @@
   padding: 0 35px;
  }
 
-
+p {
+  font-weight: 400;
+}
 
 
 
@@ -165,6 +180,9 @@
   padding: 0 40px;
  }
 
+p {
+  font-weight: 400;
+}
 
 }
 

@@ -7,10 +7,10 @@ body {
 }
 
 h1 {
-  font-weight: 200;
+  font-weight: 300;
   font-family: 'Raleway', sans-serif;
   font-size: clamp(1.3rem, 6vw, 6rem);
-
+  color: #181818;
 }
 
 h2 {
@@ -55,10 +55,10 @@ a {
 }
 
 .view-projects {
-  font-size: clamp(0.7rem, 1.3vw, 1.8rem);
+  font-size: clamp(0.7rem, 1.1vw, 1.8rem);
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .email {
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .intro span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(0.7rem, 1.1vw, 2rem);
   font-family: 'Raleway', sans-serif;
 }
