@@ -4,7 +4,10 @@ body {
   text-rendering: optimizeLegibility;
   margin: 0;
   padding: 0;
+  cursor: none;
 }
+
+
 
 h1 {
   font-weight: 300;
@@ -133,6 +136,10 @@ a:hover {
 //queries
 
 @media (hover: hover) {
+
+  a:hover {
+    cursor: none;
+  }
 
   .js-section {
     position: relative;

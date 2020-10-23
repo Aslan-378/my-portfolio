@@ -30,6 +30,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="//bootstrap-extension.com/css/4.6.1/bootstrap-extension.min.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
   </head>
   <body>
     <% unless action_name == "home" %>
@@ -37,4 +38,11 @@
     <% end %>
     <%= yield %>
   </body>
+  <script src="https://unpkg.com/kursor"></script>
+    <script>
+        new kursor({
+            type: 4
+
+        })
+    </script>
 </html>
