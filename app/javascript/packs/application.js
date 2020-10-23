@@ -117,3 +117,59 @@ function scrollFunction() {
   }
 }
 
+const project = document.querySelector(".project3")
+const project2 = document.querySelector(".project4")
+const project3 = document.querySelector(".project5")
+
+const image = document.querySelector(".js-image")
+const image2 = document.querySelector(".js-image2")
+const image3 = document.querySelector(".js-image3")
+
+
+//mouseover first project
+
+project.addEventListener('mouseover', function() {
+
+  image.style.opacity = 1
+  image.style.transition = "opacity 1s"
+
+})
+
+project.addEventListener('mouseout', function() {
+
+  image.style.opacity = 0
+  image.style.transition = "opacity 1s"
+
+})
+
+//mouseover second project
+
+project2.addEventListener('mouseover', function() {
+
+  image2.style.opacity = 1
+  image2.style.transition = "opacity 1s"
+
+})
+
+project2.addEventListener('mouseout', function() {
+
+  image2.style.opacity = 0
+  image2.style.transition = "opacity 1s"
+
+})
+
+//mouseover third project
+
+project3.addEventListener('mouseover', function() {
+
+  image3.style.opacity = 1
+  image3.style.transition = "opacity 1s"
+
+})
+
+project3.addEventListener('mouseout', function() {
+
+  image3.style.opacity = 0
+  image3.style.transition = "opacity 1s"
+
+})

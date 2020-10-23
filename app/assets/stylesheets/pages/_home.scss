@@ -133,6 +133,38 @@ a:hover {
 //queries
 
 @media (hover: hover) {
+
+  .js-section {
+    position: relative;
+  }
+
+  .js-image {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+
+  }
+
+  .js-image2 {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+  }
+
+  .js-image3 {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+
+  }
+
+
   .my-name::after {
   content: '';
   display: block;

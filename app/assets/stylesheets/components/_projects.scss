@@ -4,7 +4,6 @@
 }
 
 
-
 #project2 p {
   text-align: justify;
 }
@@ -36,6 +35,7 @@
 //medi queries
 
 @media (min-width: 320px) {
+
 
   .image-phone {
   object-fit: cover;
@@ -103,6 +103,7 @@ p {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
+
   p {
   font-weight: 500;
 }
@@ -131,9 +132,6 @@ p {
 @media (min-width: 992px) {
 
 
-
-
-
   .image-phone {
     object-fit: cover;
     padding-left: 40px;
@@ -159,7 +157,6 @@ p {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
 
 
   .image-phone {
