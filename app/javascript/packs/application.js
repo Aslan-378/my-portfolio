@@ -43,6 +43,8 @@ async function scrollAppear() {
 
     if(textPosition < screenPosition) {
     txt.classList.add('desc-text-appear');
+  } else {
+    txt.classList.remove('desc-text-appear');
   }
 
   });
@@ -55,6 +57,8 @@ async function scrollAppear() {
 
     if(macPosition < screenPosition) {
     mac.classList.add('macbook-animation-appear');
+  } else {
+    mac.classList.remove('macbook-animation-appear');
   }
 
   });
