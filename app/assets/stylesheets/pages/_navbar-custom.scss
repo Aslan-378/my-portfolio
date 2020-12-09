@@ -137,10 +137,9 @@ nav ul li a:hover {
 
       .nav-btn i {
             display: block;
-            width: 20px;
+            width: 25px;
             height: 2px;
             background: #000;
-            border-radius: 2px;
             margin-left: 14px;
       }
 
@@ -151,10 +150,13 @@ nav ul li a:hover {
       .nav-btn i:nth-child(2) {
             margin-top: 4px;
             opacity: 1;
+
       }
 
       .nav-btn i:nth-child(3) {
             margin-top: 4px;
+
+
       }
 }
 
